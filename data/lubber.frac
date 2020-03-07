@@ -1,0 +1,9 @@
+# The Land Lubber
+type: julia
+pixels: 128
+iterations: 255
+creal: -1.125129803
+cimag: -0.668674699
+centerx: -342679.88785
+centery: -0.72251
+axislength: 1.28038

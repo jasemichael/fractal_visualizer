@@ -1,0 +1,14 @@
+# lakes
+# http://bl.ocks.org/syntagmatic/raw/3736720/
+# realmin:-0.479428184021078 realmax:-0.199032752981838
+# imagmin:0.335501513801008 imagmax:0.50044000264762
+# cr:-1 ci:0
+
+type: julia
+creal: -1
+cimag: 0
+pixels: 512
+centerx: -0.339230468501458
+centery: 0.417970758224314
+axislength: 0.164938488846612
+iterations: 48

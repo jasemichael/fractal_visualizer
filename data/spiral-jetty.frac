@@ -1,0 +1,6 @@
+type: mandelbrot
+pixels: 640
+centerx: -0.761335372924805
+centery: 0.0835704803466797
+axislength: 0.00497817993164062
+iterations: 100

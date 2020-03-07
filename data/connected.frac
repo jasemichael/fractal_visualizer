@@ -1,0 +1,9 @@
+# connected julia set
+type: julia
+creal: .26
+cimag: .0016
+centerx: 0
+centery: 0
+axislength: 2.17
+pixels: 512
+iterations: 64

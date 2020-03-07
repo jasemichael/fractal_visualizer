@@ -1,0 +1,7 @@
+# Zoomed way in
+type: mandelbrot
+pixels: 512
+centerx: -1.48
+centery: 0.0
+axislength: 0.01
+iterations: 300
