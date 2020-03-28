@@ -1,4 +1,4 @@
-import sys, Config, Gradient, Mandelbrot, Julia, ImagePainter
+import sys, Config, Gradient, ImagePainter
 
 def checkArgs(configs):
     if len(sys.argv) < 2:

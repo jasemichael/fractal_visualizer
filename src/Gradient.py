@@ -1,9 +1,3 @@
-def createGradient(N):
-    G = []
-    for i in N:
-        G.append(None)
-    return G
-
 def getGradient():
     G = [
         '#ffe4b5', '#ffe5b2', '#ffe7ae', '#ffe9ab', '#ffeaa8', '#ffeda4',
