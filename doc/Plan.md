@@ -263,13 +263,22 @@ combine statements into a single print statement
 ### main.py
 Contains main() function. Regulates control of program.
 ### Config.py
-
+Contains dictionary with composed of fractal configuration data
 ### Gradient.py
+Contains an array G containing N colors; 
+when the Mandelbrot or Julia fractal function returns an iteration count of a point in the complex plane, 
+the corresponding pixel is painted G[count]
 ### ImagePainter.py
+Creates a Tk window and a PhotoImage object; 
+the PhotoImage stores the pixels and is capable of creating a PNG image file
 ### Julia.py
+Code that returns the iteration count of the Julia function for that point
 ### Mandelbrot.py
+Code that returns the iteration count of the Mandelbrot function for that point
 
 ## Implementation
 ## Verification/Validation
-### Integration Test
-### Unit Tests
+### Integration Test (validation)
+Use generated images to validate similarities 
+### Unit Tests (verification)
+Use unit tests to verify code is functioning correctly
