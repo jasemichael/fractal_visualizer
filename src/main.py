@@ -1,27 +1,21 @@
-import sys, Config, Gradient, ImagePainter
+import sys, ImagePainter, FractalFactory, GradientFactory
 
-def checkArgs(configs):
+def run():
     if len(sys.argv) < 2:
-        print("Please provide the name of a fractal as an argument")
-        for config in configs:
-            print(f"\t{config}")
-        sys.exit(1)
+        print("FractalFactory: Creating default fractal\nGradientFactory: Creating default color gradient")
+    elif len(sys.argv) < 3:
+        print("GradientFactory: Creating default color gradient")
+    d = {}
+    file = open(sys.argv[1])
+    for line in file:
+        if line[0] != "#":
+            line = line.split(': ')
+            d[line[0].lower()] = line[1].strip("\n").lower()
+    fractal = FractalFactory.makeFractal(fractal=d['type'])
+    gradient = GradientFactory.makeGradient(sys.argv[2])
+    ImagePainter.draw(d, fractal, gradient, sys.argv[1])
 
-    elif sys.argv[1] not in configs:
-        print(f"ERROR: {sys.argv[1]} is not a valid fractal\nPlease choose one of the following:")
-        for config in configs:
-            print(f"\t{config}")
-        sys.exit(1)
-
-def run(configs):
-    fractalType = configs[sys.argv[1]]['type']
-    gradient = Gradient.getGradient()
-    ImagePainter.draw(configs, sys.argv[1], fractalType, gradient)
-
-def main(configs):
-    checkArgs(configs)
-    run(configs)
 
 
 if __name__ == '__main__':
-    main(Config.getConfigs())
+    run()
