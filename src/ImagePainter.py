@@ -24,7 +24,7 @@ def draw(configs, fractalType, gradient, filename):
     canvas.pack()
 
 
-    size = abs(max[0] - min[0]) / float(pixels)
+    size = abs(max[0] - min[0]) / pixels
     for r in range(pixels, 0, -1):
         for c in range(pixels):
             x = min[0] + c * size
