@@ -8,4 +8,4 @@ def makeFractal(fractal='julia'):
     elif fractal == 'mandelbrot3':
         return Fractal.Mandelbrot3
     else:
-        raise NotImplementedError("Invalid fractal request!")
+        raise NotImplementedError("Invalid fractal request")

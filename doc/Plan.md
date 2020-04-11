@@ -1,4 +1,4 @@
-# Plan
+# Plan 4.0
 ## Requirements
 ### Code Smells
 #### julia_fractal.py
@@ -282,3 +282,33 @@ Code that returns the iteration count of the Mandelbrot function for that point
 Use generated images to validate similarities 
 ### Unit Tests (verification)
 Use unit tests to verify code is functioning correctly
+
+# Plan 4.1
+## Requirements
+Compile the current code into modules with 4 different base classes: Fractal, FractalFactory, Gradient, GradientFactory
+
+
+## Design
+### Fractal
+Abstract class with __init__() and count() methods. Contains 3 other fractals inherited from Fractal.
+
+### FractalFactory
+Factory class that maintains the structure of the Fractals using the Factory method.
+
+### Gradient
+Abstract class with __init__() and getColor() methods. Contains at least 2 sub-class gradients.
+
+### GradientFactory
+Factory class that maintains the structure of Gradients using the Factory method.
+
+### ImagePainter
+Generates the photos based on the fractal and gradient.
+
+### main
+run() main controller of all the modules.
+
+## Implementation
+
+## Verification/Validation
+### Comparison
+Generate an image and compare to correctly generated image.

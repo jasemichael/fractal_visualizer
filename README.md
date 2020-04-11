@@ -70,7 +70,7 @@ confident until you understand what's going on.  To this end I have provided an
 interactive Mandelbrot program called [demo/interactive.py](demo/interactive.py)
 
 *   Left-Clicking the image will paint a square using the same algorithm that
-    the [src/mbrot_fractal.py](src/mbrot_fractal.py) program uses, except this
+    the [src/mbrot_fractal.py](src/4.0/mbrot_fractal.py) program uses, except this
     program will print to the console the values of the Z parameter at each
     iteration as well as display the iteration count.
 *   Right-Clicking the Canvas reveals the entire image at once.
